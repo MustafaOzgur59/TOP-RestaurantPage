@@ -1,0 +1,160 @@
+:root {
+  --btn-home-active: #4ade80;
+  --btn-menu-active: #89772f;
+  --btn-contact-active: #22d3ee;
+  --head-text: #fafafa;
+  --border-color: #222;
+  --background-light: rgba(0, 0, 0, 0.6);
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Indie Flower", cursive;
+  box-sizing: border-box;
+}
+
+#content {
+  background-image: url("./bakery2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  font-family: "Indie Flower", cursive;
+  color: var(--head-text);
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-dark);
+}
+
+.active:first-child {
+  border-bottom: 2px solid var(--btn-home-active);
+}
+
+.active:nth-child(2) {
+  border-bottom: 2px solid var(--btn-menu-active);
+}
+
+.active:nth-child(3) {
+  border-bottom: 2px solid var(--btn-contact-active);
+}
+
+#container {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#mainContent {
+  height: 88vh;
+  display: flex;
+  justify-content: center;
+}
+
+#mainContent > #mainCard {
+  height: 70%;
+  border-radius: 5px;
+  color: var(--head-text);
+  font-size: 45px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  top: 20%;
+  left: -20%;
+}
+
+#mainCardText {
+  padding: 15px 25px;
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 1%;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--background-light);
+}
+
+#footer > a,
+a:visited {
+  text-decoration: none;
+  color: var(--head-text);
+}
+
+#footer > img {
+  color: var(--head-text);
+}
+
+.navButton {
+  font-size: 1.3rem;
+  padding: 10px 35px;
+  border: none;
+  border-bottom: 2px solid;
+  outline: none;
+  background: none;
+  color: var(--head-text);
+  transition: all ease-out 0.3s;
+}
+
+#mainContent > .contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--head-text);
+  margin-left: 20%;
+}
+
+#mainContent > .menuCard {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--head-text);
+}
+
+.menuCard #menuItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menuCard #menuTitle {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-dark);
+  border-radius: 150px;
+  padding: 50px 100px;
+}
+
+#menuTitle #titleText {
+  font-size: 30px;
+  border-bottom: #fafafa solid;
+}
+
+#menuItems > #menuItem {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+#menuItem > #menuList {
+  list-style-type: none;
+}
+
+#githubLogo {
+  width: 30px;
+  height: 30px;
+}
